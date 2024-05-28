@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="login.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    body
+    {
+       background-image: url('istockphoto-1175420916-612x612.jpg');
+       background-repeat: no-repeat;
+
+    background-size: 100%;
+}
+#form
+{
+    width: 350px;
+    margin: 8vh auto 0 auto;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 10px;
+  
+}
+h1
+{
+    text-align: center;
+    color:rgb(10, 223, 10)
+}
+#form button
+{
+background-color: rgb(12, 216, 12);
+color:white;
+border-radius: 5px;
+padding: 10px;
+margin:20px auto;
+width: 100%;
+cursor: pointer;
+font-size: 20px;
+border:1px solid rgb(13, 216, 13);
+}
+.input-group
+{
+display: flex;
+flex-direction: column;
+margin-bottom:15px ;
+position: relative;
+}
+.input-group input{
+border-radius: 5px;
+font-size: 15px;
+margin-top: 10px;
+padding: 10p;
+border:1px solid rgb(15, 209, 15);
+}
+.input-group input:focus
+{
+    outline: 0;
+}
+.input-group .error
+{
+    color:orangered;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.input-group.sucess input{
+    border-bottom:rgb(15, 218, 15);
+}
+.input-group.error input{
+    border-color:orangered ;
+}
+.input-group label
+{
+    font-size: 20px;
+}
+.hidden
+{
+    position: absolute;
+    right: 10px;
+    top:40px;
+}
+.dropdown-item{
+    background-color: rgb(233, 223, 223);
+  }
+  .dropdown-item:hover{
+    color:blue;
+  }
+  .nav-link:hover
+  {
+      color:blue;
+  
+  }
+  .nav-link:active
+  {
+      color: green;
+  }
+  body{
+    overflow-y: hidden;
+  }
+
+</style>
+</head>
+<body>
+      
+
+ <nav class=" navbar navbar-expand-lg bg-light sticky-top" >
+     <div class="container-fluid">
+        
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+    
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+             
+            <a class="nav-link " aria-current="page" href="index.html">  <i class="fa-solid fa-house"></i>Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="about.html">About Us</a>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Service
+             </a>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="computer.html">Computer service</a></li>
+               <li><a class="dropdown-item" href="service.html">mobile service</a></li>
+             
+               <li><a class="dropdown-item" href="alaram.html">Clock service</a></li>
+               <li><a class="dropdown-item" href="service.html">Television service</a></li>
+              
+             </ul>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link " href="product.html">Products</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link " href="Login.html">Register</a>
+           </li>
+
+         </ul>
+         <form class="d-flex" role="search">
+           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+           <button class="btn btn-outline-info" type="submit">Search</button>
+         </form>
+       </div>
+     </div>
+   </nav>
+  <div class="container">
+    <form action="" id="form">
+        <h1>Register</h1>
+        <hr color="green">
+        <br>
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Gopikesavan" style="height: 25px;">
+            
+                        <div class="error"></div>
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input  id="email" name="email" placeholder="rgopiece2020@gmail.com" style="height: 25px;">
+            <div class="error"></div> 
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Gopi@gra"  style="height: 25px;">
+            <i class="fa-solid fa-eye-slash hidden"  id="passwordhidden"></i> <div class="error"></div>
+        </div>
+        <div class="input-group">
+            <label for="cpassword">Confirm Password</label>
+            <input type="password" id="cpassword" name="cpassword " placeholder="Gopi@gra" style="height: 25px;">
+            <i class="fa-solid fa-eye-slash hidden"  id="passwordhidden"></i> <div class="error"></div>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.querySelector('#form');
+    const username = document.querySelector('#username');
+    const email = document.querySelector('#email');
+    const password = document.querySelector('#password');
+    const cpassword = document.querySelector('#cpassword');
+    const hiddenpassword=document.getElementById("passwordhidden")
+   
+    
+
+    hiddenpassword.addEventListener('click',e=>{
+        
+        if(password.type==="password")
+        {
+            password.type="text"
+            hiddenpassword.classList.remove('fa-eye-slash')
+            hiddenpassword.classList.add('fa-eye')
+            
+        }
+        else{
+            password.type="password";
+            hiddenpassword.classList.add('fa-eye-slash')
+            hiddenpassword.classList.remove('fa-eye')
+        }
+    })
+function repalce()
+{
+
+
+}
+    form.addEventListener('submit', (e) => {
+        if (!validateInputs()) {
+            e.preventDefault();
+        }
+    });
+
+    function validateInputs() {
+        const usernameVal = username.value.trim();
+        const emailVal = email.value.trim();
+        const passwordVal = password.value.trim();
+        const cpasswordVal = cpassword.value.trim();
+        let success = true;
+
+        if (usernameVal === '') {
+            success = false;
+            setError(username, 'Username is required');
+        } else if(usernameVal.length < 6)
+        {
+            success=false;
+            setError(username,'Username must contain at least 6 characters');
+        }
+        else {
+            setSuccess(username);
+        }
+
+        if (emailVal === '') {
+            success = false;
+            setError(email, 'Email is required', true);
+        } else if (!validateEmail(emailVal)) {
+            success = false;
+            setError(email, 'Invalid email', true);
+        } else {
+            setSuccess(email);
+        }
+
+        if (passwordVal === '') {
+            success = false;
+            setError(password, 'Password is required');
+        } else if (passwordVal.length < 8) {
+            success = false;
+            setError(password, 'Password must be at least 8 characters long');
+        } else {
+            setSuccess(password);
+        }
+
+        if (cpasswordVal === '') {
+            success = false;
+            setError(cpassword, 'Confirm password is required');
+        } else if (cpasswordVal !== passwordVal) {
+            success = false;
+            setError(cpassword, 'Passwords do not match');
+        } else {
+            setSuccess(cpassword);
+        }
+
+        return success;
+    }
+
+    function setError(element, message, isEmail = false) {
+        const inputGroup = element.parentElement;
+        const errorElement = inputGroup.querySelector('.error');
+        if (isEmail) {
+            errorElement.innerHTML = message;
+        } else {
+            errorElement.innerText = message;
+        }
+        inputGroup.classList.add('error');
+        inputGroup.classList.remove('success');
+    }
+
+    function setSuccess(element) {
+        const inputGroup = element.parentElement;
+        const errorElement = inputGroup.querySelector('.error');
+
+        errorElement.innerText = '';
+        inputGroup.classList.add('success');
+        inputGroup.classList.remove('error');
+    }
+
+    const validateEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    };
+  </script>
+</body>
+</html>

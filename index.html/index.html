@@ -1,0 +1,448 @@
+kkkkkk<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+.card
+{
+  background-color: lightblue;
+  box-shadow: 10px 10px 5px gray;
+
+}
+
+
+.card:hover
+{
+  transform: scale(0.8, 0.9);
+}
+.details{
+  text-decoration: none;
+  color:black;
+  text-align: center;
+}
+.running
+{
+
+    color: blue;
+}
+.nav-link:hover
+{
+    color:blue;
+
+}
+.nav-link:active
+{
+    color: green;
+}
+.head
+    {
+position:relative;
+margin-left: 50px;
+margin-top: 150px;
+color: dimgrey;
+
+
+    }
+    .head1
+    {
+position:relative;
+margin-left: 50px;
+margin-top: 40px;
+font-size: xx-large;
+
+    }
+    .head2
+    {
+        position:relative;
+margin-left: 50px;
+margin-top: 40px;
+    }
+    .contact
+    {
+       
+        text-decoration: none;
+        color:black;
+       
+    }
+    .button
+    {
+
+        position:relative;
+       
+        margin-top: 60px;
+
+        margin-left: 100px;
+        font-size: xx-large;
+        background-color:lightblue;
+ 
+       padding:2px;
+       border-radius: 25px;
+       width:200px;
+       
+    }
+ 
+.navimage
+{
+    display:flex;
+  background-color: whitesmoke;
+}
+.purpose
+{
+  background-color: whitesmoke;
+}
+.ourservice>a
+{
+  text-decoration: none;
+  color:black;
+}
+.ourservice>a:hover
+{
+  color:blue;
+}
+.bottom
+{
+  Display:flex;
+  gap:100px;
+  background-color:lightgrey;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.products>a
+{
+  text-decoration: none;
+  color:black;
+}
+.products>a:hover
+{
+  color:blue;
+}
+.list
+{
+  list-style-type:none;
+}
+#legal
+{
+  color:blue
+}
+.socialmedia>li
+{
+  font-family: 'Courier New', Courier, monospace;
+  list-style-type: none;
+}
+.bootom
+{
+   background-color: lightslategray;
+}
+.dropdown-item{
+  background-color: whitesmoke;
+}
+.dropdown-item:hover{
+  color:blue;
+}
+#payment{
+  font-size: 40px; 
+  background-color:lightslategray;
+  border: 2px;
+  padding:2px;
+  
+}
+@media (max-width: 768px) {
+  .head,
+  .head1,
+  .head2 {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: large;
+  }
+  .button {
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: large;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .col-md-3 {
+    margin-bottom: 20px; 
+  }
+  .socialmedia, .pay {
+    display: block;
+    margin-right:20px;
+}
+}
+
+
+@media (max-width: 576px) {
+  .head,
+  .head1,
+  .head2 {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: medium;
+  }
+  .button {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: medium;
+  }
+  .navimage {
+    flex-direction: column;
+  }
+  .img1 {
+    order: -1;
+  }
+}
+
+</style>
+</head>
+<body>
+  
+ <marquee behavior="" direction="right" class="running"> <h3>welcome to Ruban electronic service </h3></marquee>
+    <nav class=" navbar navbar-expand-lg bg-light sticky-top" >
+        <div class="container-fluid">
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+       
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                
+               <a class="nav-link " aria-current="page" href="#">  <i class="fa-solid fa-house"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Service
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="computer.html">Computer service</a></li>
+                  <li><a class="dropdown-item" href="service.html">mobile service</a></li>
+                
+                  <li><a class="dropdown-item" href="alaram.html">Clock service</a></li>
+                  <li><a class="dropdown-item" href="service.html">Television service</a></li>
+                 
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="product.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Login.html">Register</a>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-info" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="navimage">
+       
+        <div class="content">
+            <h3 class="head">Develop & Optimize Your Electronic Devices at  70% <br> Lesser Cost</h3>
+<h1 class="head1"> <b>Best electronic service from Tamilnadu. <br>24/7 service. </b></h1>
+<h3 class="head2">Revolutionizing electronic services, one click at a time.</h3>
+<button class="button btn-primary"> <a href="serviceenquriyform.html" class="contact">Enquiry</a></button>
+        </div>
+
+    <div class="img1" >
+        <img src="./image/hire-electronics-engineer-banner-image.png" alt="" class="img-fluid" class="right">
+
+    </div>
+</div>
+
+<br><br>
+
+  <div class="purpose">
+    <div>
+    <center>  <h1 class="why"> <b> Why Choose Us</h1> </b> </center>
+    </div>
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 ">
+        <div class="image-top">
+          <img src="./image/ic1.png" alt="" class="img-fluid">
+          <p>10% Price Guarantee
+        
+            </p>
+        </div>
+      </div>
+      <br>
+      <br><br>
+      
+       <div class="col-md-3">
+          <div clas s="image-top">
+            <img src="./image/ic2.png" alt=""   class="img-fluid">
+            <p>100% True Load Testing with <br> Custom Engineered Test Stands</p>
+          </div>
+        </div>
+        <div class="col-md-3  ">
+          <div clas s="image-top">
+            <img src="./image/ic3.png" alt=""   class="img-fluid">
+            <p> 18 Month In-Service Warranty</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div clas s="image-top">
+            <img src="./image/ic4.png" alt=""  class="img-fluid">
+            <p> Free 1-2 Day Rush Service</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+      <h1> <b>12 categories services</h1></b>
+      <hr> </hr>
+      <div class="row">
+      <div class="col-md-3  ">
+        <div class="card">
+          <div class="card-tittle"> <center><h3>Computer <br> service</h3></center></div>
+          <img src="./image/computer1.jpg" alt=""  class="img-fluid">
+       <a href="computer.html" class="details"> Viewdetails</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-tittle" > <center> <h3>Mobile <br> service</h3></center></div>
+          <img src="./image/mobile1.jpg" alt=""class="img-fluid">
+          <a href="./service.html" class="details"> Viewdetails</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-tittle"> <center> <h3>Clock <br> service</h3></center></div>
+          <img src="./image/clock.jpg" alt=""  class="img-fluid">
+          <a href="alaram.html" class="details">Viewdetails</a>
+        </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+           <center>  <div class="card-tittle"> <h3>Headphone <br> service </h2></div></center>
+            <img src="./image/headphone1.jpg" alt=""  class="img-fluid">
+            
+          <a href="service.html" class="details">Viewdeatails</a>  
+          </div>
+      </div>
+    <hr><hr>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-tittle"> <center><h3>Television service</h3></center></div>
+          <img src="./image1/television.jpg" alt="" class="img-fluid">
+       <a href="service.html" class="details"> Viewdetails</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-tittle"> <center><h3>miscelluoes service</h3></center></div>
+          <img src="./image/miscelluoes.jpg" alt=""  style="width:100%">
+       <a href="service.html" class="details"> Viewdetails</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-tittle"> <center><h3>Transaction service</h3></center></div>
+          <img src="./image/Financial Transaction Equipment Repair.jpg" alt="" class="img-fluid">
+        <a href="service.html" class="details"> Viewdetails</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-tittle"> <center><h3> Audio  Equipment</h3></center></div>
+          <img src="./image/homeaudio.jpg" alt="" class="img-fluid">
+       <a href="service.html" class="details"> Viewdetails</a>
+        </div>
+      </div>
+      <hr><hr>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-tittle"> <center><h3> SmartHome <br> service</h3></center></div>
+          <img src="./image/smarhomedevice.jpg" alt=""class="img-fluid">
+       <a href="service.html" class="details"> Viewdetails</a>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-tittle"> <center><h3> Battery <br> service</h3></center></div>
+          <img src="./image/battery.jpg" alt=""  class="img-fluid">
+       <a href="service.html" class="details"> Viewdetails</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-tittle"> <center><h3> Mediaplayer <br> service</h3></center></div>
+          <img src="./image/mediaplayer.jpg" alt="" class="img-fluid">
+       <a href="service.html" class="details"> Viewdetails</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-tittle"> <center><h3>GPS <br> service </h3></center></div>
+          <img src="./image/gps.jpg" alt="" class="img-fluid">
+        <a href="service.html" class="details"> Viewdetails</a>
+        </div>
+      </div>
+      <hr><hr>
+    </div>
+  </div>
+  <div class="bottm-image">
+    <img src="./image/bottomimage.png" alt="" class="img-fluid" width="100%;">
+  </div>
+  <br>
+  <br>
+
+<div class="container-fluid">
+  <div class="bottom">
+   <div>  <a href="./about.html" style="text-decoration: none;"> <h3 style="color:blue" > About Us</h3></a>
+    Explore, Create, Innovate  <br>for quality electronic <br>  components, creativity and  <br> innovation in every project. <br> Join us in bringing your ideas <br> to life!</div>
+
+   
+<div class="ourservice">
+<a href="service.html"> <h3 style="color:rgb(19, 19, 212)" id="service">Our service</h3></a>
+<a href="computer.html">Computer service</a> <br>
+<a href="service.html">Mobile service</a> <br>
+<a href="alaram.html">Clock service</a>  <br>
+<a href="service.html">Headphonr service</a> <br>
+<a href="service.html">Television service</a> <br>
+<a href="service.html">Miscelluoes service......</a> <br>
+
+
+</div>
+
+
+<div>
+  <h3 id="legal">Help & support</h3>
+  <p>contact us 24/7 <br>Monday to staturday <br><i class="fa-solid fa-phone"> </i>+91 8925074329 <br><i class="fa-solid fa-message"></i>electro20242gmail.com</p>
+</div> 
+<div class="socialmedia">
+<h3  style="color:blue">connect with us</h3>
+
+ <i class="fa-brands fa-whatsapp"></i>Whatapp               </li>
+ <i class="fa-brands fa-instagram"></i> Instagram</li>
+ <i class="fa-brands fa-twitter"></i> Twitter</li>
+ <i class="fa-brands fa-facebook"></i> Facebbok</li>
+ <br><br>
+ <div class="pay"><h3 style="color:blue">Payment secured by</h3>
+ <i class="fa-brands fa-cc-paypal" id="payment"></i> <i class="fa-brands fa-google-pay" id="payment"></i>  <i class="fa-brands fa-cc-amazon-pay" id="payment"></i>" <i class="fa-brands fa-cc-apple-pay" id="payment"></i></div>
+
+</div>
+
+</div>
+
+ <center><p style=" background-color:lightgrey ;">copyright@2024 HCL PVT.LTD All Right Reserved|Terms&Condition</BR></p>
+ </center>
+</div></body>
+</html>
